@@ -1,7 +1,5 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include "Dice.h"
+//#include "Dice.h"
 #include "LoadedDice.h"
 
 using namespace std;
@@ -58,13 +56,13 @@ int main()
 	cout << "You rolled a " << dice1 << " and a " << dice2 << endl;
 	cout << "That adds to " << dice1 + dice2 << endl;
 
-//	LoadedDice six_sides;
-	//LoadedDice nine_sides(9);
+	LoadedDice six_sides;
+	LoadedDice nine_sides(9);
 
-	//int load_dice1 = six_sides.diceRoll();
-//	int load_dice2 = nine_sides.diceRoll();
+	int load_dice1 = six_sides.diceRoll();
+	int load_dice2 = nine_sides.diceRoll();
 
-	//cout << "You also rolled a " << load_dice1 << endl;
+	cout << "You also rolled a " << load_dice1 << " and a " << load_dice2 << endl;
 
 	return 0;
 }
